@@ -1,0 +1,1 @@
+const express = require('express');\nconst router = express.Router();\nconst cacheController = require('../controllers/cacheController');\n\nrouter.post('/lru', cacheController.lruCache);\nrouter.post('/mru', cacheController.mruCache);\nrouter.post('/fifo', cacheController.fifoCache);\n\nmodule.exports = router;

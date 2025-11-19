@@ -1,0 +1,1 @@
+// Implement cache logic for LRU, MRU, and FIFO algorithms here.

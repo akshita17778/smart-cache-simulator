@@ -1,0 +1,1 @@
+// Define cache model schema and logic here.
