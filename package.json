@@ -1,0 +1,1 @@
+{ "name": "smart-cache-simulator", "version": "1.0.0", "description": "A smart cache simulator implementing LRU, MRU, and FIFO caching algorithms.", "main": "src/index.js", "scripts": { "test": "echo \"Error: no test specified\" && exit 1" }, "author": "Your Name", "license": "ISC" }
