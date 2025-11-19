@@ -1,1 +1,1 @@
-# Smart Cache Simulator\n\nThis project implements various caching algorithms including LRU, MRU, and FIFO.\n\n## Installation\n\nRun `npm install` to install dependencies.\n\n## Usage\n\nRun the application using `node src/index.js`.\n\n## Contributing\n\nFeel free to submit a Pull Request.\n\n## License\n\nThis project is licensed under the MIT License.
+# Smart Cache Simulator\n\nThis project implements various caching algorithms including LRU, MRU, and FIFO.\
