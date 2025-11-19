@@ -1,1 +1,11 @@
-const express = require('express');\nconst app = express();\nconst cacheRoutes = require('./routes/cacheRoutes');\n\napp.use(express.json());\napp.use('/cache', cacheRoutes);\n\nconst PORT = process.env.PORT || 3000;\napp.listen(PORT, () => {\n  console.log(`Server is running on port ${PORT}`);\n});
+const express = require('express');
+const cacheRoutes = require('./routes/cacheRoutes');
+const app = express();
+
+app.use(express.json());
+app.use('/cache', cacheRoutes);
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});

@@ -1,1 +1,13 @@
-const CacheService = require('../services/cacheService');\n\nconst cacheController = {\n  lruCache: (req, res) => {\n    // Implement LRU cache logic here\n    res.send('LRU cache response');\n  },\n  mruCache: (req, res) => {\n    // Implement MRU cache logic here\n    res.send('MRU cache response');\n  },\n  fifoCache: (req, res) => {\n    // Implement FIFO cache logic here\n    res.send('FIFO cache response');\n  }\n};\n\nmodule.exports = cacheController;
+const CacheService = require('../services/cacheService');
+
+exports.getCache = (req, res) => {
+    const key = req.params.key;
+    const value = CacheService.get(key);
+    res.json({ key, value });
+};
+
+exports.setCache = (req, res) => {
+    const { key, value } = req.body;
+    CacheService.set(key, value);
+    res.json({ message: 'Cache set successfully' });
+};

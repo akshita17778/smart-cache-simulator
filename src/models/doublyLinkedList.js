@@ -1,1 +1,1 @@
-// Implement doubly linked list for LRU and MRU caches.
+// Implementation for Doubly Linked List can be included if needed for other types of caches

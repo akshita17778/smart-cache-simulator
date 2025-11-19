@@ -1,1 +1,13 @@
-{\n  "name": "smart-cache-simulator",\n  "version": "1.0.0",\n  "description": "A project to simulate different cache algorithms",\n  "main": "src/index.js",\n  "scripts": {\n    "test": "echo 'Error: no test specified' && exit 1"\n  },\n  "author": "atishaygaur6-hue",\n  "license": "ISC"\n}
+{
+  "name": "smart-cache-simulator",
+  "version": "1.0.0",
+  "description": "A simulator for different cache algorithms",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "winston": "^3.3.3"
+  }
+}
